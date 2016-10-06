@@ -140,6 +140,6 @@ function windSpeed()
     $request = $lien;
     $response = file_get_contents($request);
     $jsonobj = json_decode($response, true);
-    $windSpeed = (round($jsonobj['wind']['speed'], 1)*36)/10;
+    $windSpeed = round((($jsonobj['wind']['speed']*36)/10), 1);
     return $windSpeed;
 }
