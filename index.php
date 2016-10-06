@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/js/bootstrap.js">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>WeatherMood</title>
 </head>
 <body>
 <h1 class="tittle">WeatherMood</h1>
