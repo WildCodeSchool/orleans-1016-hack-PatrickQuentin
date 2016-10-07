@@ -18,8 +18,7 @@ function deezer(){
     $response  = file_get_contents($request);
     $jsonobj  = json_decode($response, true);
     $meteo=$jsonobj['weather'][0]['main'];
-    echo $meteo;
-    echo "</br>".$ville;
+
 
     if ($meteo == 'Clear')
         return "<iframe scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\" src=\"http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=playlist&id=2298993622&app_id=1\" width=\"300\" height=\"300\"></iframe>";
@@ -143,3 +142,25 @@ function windSpeed()
     $windSpeed = round((($jsonobj['wind']['speed']*36)/10), 1);
     return $windSpeed;
 }
+
+
+                    /*===============================================*\
+                                       Humidity
+                    \*===============================================*/
+
+function humidity()
+{
+
+    if (isset($_POST['valider'])) {
+        $ville = $_POST['ville'];
+
+    }
+    $lien = 'http://api.openweathermap.org/data/2.5/weather?q=' . $ville . '&APPID=77191f7030ac008b2be985e20afe4c01';
+
+    $request = $lien;
+    $response = file_get_contents($request);
+    $jsonobj = json_decode($response, true);
+    $humidity = $jsonobj['main']['humidity'];
+    return $humidity;
+}
+
