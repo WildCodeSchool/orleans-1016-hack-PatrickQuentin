@@ -25,13 +25,13 @@ $heure = date("H:i");
     <div class="row">
         <!---slogan-->
         <div class="col-lg-offset-1 col-lg-3 col-xs-12" >
-            <p class="txt2" style="margin-top: 6px">Ecouter la météo d'ailleur : </p>
+            <p class="txt2" style="margin-top: 6px">Ecoutez la météo d'ailleur : </p>
         </div>
         <div class="col-lg-5 col-xs-12">
             <form class="form-inline" method="post" action="result.php">
                 <div class="form-group">
                     <input type="text" class="form-control input-lg" id="text" name="ville" placeholder="insérer une ville" </div>
-                <button type="submit" name="valider" class="btn btn-primary btn-lg">Let's the music play</button>
+                <button type="submit" name="valider" class="btn btn-primary btn-lg">Let the music play</button>
             </form>
         </div>
         <div class="espace"></div>
@@ -49,7 +49,7 @@ $heure = date("H:i");
             <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-10 tuile">
                 <div class="row_meteo">
                     <h3 class="center">Radio météo de <?php echo ucfirst($ville); ?></h3>
-                    <h3 class="center">nous somme le <?php echo $date; ?> il est <?php echo $heure; ?></h3>
+                    <h3 class="center">nous sommes le <?php echo $date; ?> il est <?php echo $heure; ?></h3>
                     <div class="col-lg-4 col-md-4">
                         <div class="icon_position"><?php echo icon(); ?></div>
                     </div>
@@ -65,13 +65,13 @@ $heure = date("H:i");
                                 <img style="padding-top:1em; width: 100%" src="ressources/7810-200w.png">
                             </div>
                             <div class="col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-9 infos">
-                                <p class="infox">la température est de <?php echo temp();?> °c</p>
+                                <p class="infox">température :<?php echo temp();?> °c</p>
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                                 <img style="padding-top:1em; width: 100%" src="ressources/pcoABXgziw.png">
                             </div>
                             <div class="col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-9 infos">
-                                <p class="infox">le vent souffle à <?php echo windSpeed();?> km/h</p>
+                                <p class="infox">vent :<?php echo windSpeed();?> km/h</p>
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 infos">
                                 <img style="padding-top:1em; width: 100%" src="ressources/unnamedw.png">
