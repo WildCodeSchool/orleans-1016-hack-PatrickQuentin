@@ -28,7 +28,7 @@
     </div>
     <div class="espace2"></div>
 
-    <div class="row" ><!---formulaire--><div class="col-lg-offset-2 col-lg-7 col-md-offset-1 col-md-5 col-sm-offset-3 col-sm-8 col-xs-offset-2 col-xs-8"><form class="form-inline" method="post" action="result.php"><div class="form-group"><input type="text" class="form-control input-lg" id="text" name="ville" placeholder="insérer une ville" </div><button type="submit" name="valider" class="btn btn-primary btn-lg">Let's the music play</button></form></div></div>
+    <div class="row" ><!---formulaire--><div class="col-lg-offset-2 col-lg-7 col-md-offset-1 col-md-5 col-sm-offset-3 col-sm-8 col-xs-offset-2 col-xs-8"><form class="form-inline" method="post" action="result.php"><div class="form-group"><input type="text" class="form-control input-lg" id="text" name="ville" placeholder="insérez une ville" </div><button type="submit" name="valider" class="btn btn-primary btn-lg">Let the music play</button></form></div></div>
 </div>
 
 
